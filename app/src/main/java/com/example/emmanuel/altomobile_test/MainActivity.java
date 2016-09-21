@@ -5,20 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.facebook.AccessToken;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginManager;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         //Verify is user is logged
         if(AccessToken.getCurrentAccessToken() == null){
             goLoginScreen();
         }
         else {
+            //Load content for view
             goListView();
         }
     }

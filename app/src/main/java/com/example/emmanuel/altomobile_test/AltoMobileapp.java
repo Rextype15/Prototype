@@ -5,9 +5,7 @@ import android.app.Application;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 
-/**
- * Created by Emmanuel on 9/19/2016.
- */
+
 public class AltoMobileapp extends Application {
     @Override
     public void onCreate(){
